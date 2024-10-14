@@ -1,0 +1,143 @@
+/* Setup default padding and margin to all elements on the html page */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#container
+{
+    position: relative;
+}
+#background_image{
+    background-color: aqua;
+}
+/* Get element with id=background_image and go to img element to setup format  */
+#background_image img{
+    /* with width = 100% screen */
+    width: 100%;
+    /* heigh with 100vh, (view height) */
+    height: 100vh; 
+}
+
+
+#shark
+{
+	position: absolute;
+	width: 200px; height: 147px;
+	/* animation name */
+	animation-name: Shark;
+	/* animation time*/
+	animation-duration: 10s;
+	/* animation style */
+	animation-timing-function: ease-in-out;
+    /* Loop */
+	animation-iteration-count:infinite;
+	/* animation state */
+	animation-play-state: running;	
+	/* Rotate image */
+	transform:scaleX(-1)
+}
+@keyframes Shark
+{
+    0%{top:240px;right: 0%;}
+    10%{top:240px;right: 10%;}
+    20%{top:240px;right: 20%;}
+    30%{top:240px;right: 30%;}
+    40%{top:240px;right: 40%;}
+    50%{top:240px;right: 50%;}
+    60%{top:240px;right: 60%;}
+    70%{top:240px;right: 70%;}
+    80%{top:240px;right: 80%;}
+    90%{top:240px;right: 90%;}
+    100%{top:240px;right: 100%;}
+}
+#so{
+    position: absolute;
+    left: 110px;
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+    bottom: 50px;
+    z-index: 2;
+}
+#botnuoc{
+    position: absolute;
+    left: 180px;
+    bottom: 70px;
+    z-index: 1;
+}
+#rong1{
+    position: absolute;
+    bottom: 0px;
+    right: 150px;
+}
+#rong2{
+    position: absolute;
+    bottom: 0px;
+    left: 350px;
+}
+#rong3{
+    position: absolute;
+    bottom: 10px;
+    left: -80px;
+}
+#ca{
+    position: absolute;
+    top: 0px;
+    width: 150px;
+    transform: scaleX(-1);
+    animation: Fish1 10s ease-in-out 0s infinite;
+}
+#ca img{
+    width: 100%;
+}
+@keyframes Fish1{
+    0%{top:0px;left: -100px;}
+    10%{top:0px;left: 0px;}
+    20%{top:0px;left: 200px;}
+    30%{top:0px;left: 300px;}
+    40%{top:0px;left: 350px;}
+    50%{top:0px;left: 450px;}
+    60%{top:0px;left: 600px;}
+    70%{top:0px;left: 750px;}
+    80%{top:0px;left: 800px;}
+    90%{top:0px;left: 1200px;}
+    100%{top:0px;left: 1600px;}
+}
+#bachtuot{
+    position: absolute;
+    left: 30%;
+    width: 150px;
+    animation: Bachtuot 10s ease-in-out 0s infinite;
+}
+#bachtuot img {
+    width: 100%;
+}
+@keyframes Bachtuot{
+    0%{bottom: 0%;}
+    20%{bottom: 20%;}
+    40%{bottom: 40%;}
+    60%{bottom: 50%;}
+    80%{bottom: 60%;}
+    100%{bottom: 100%;}
+}
+.btn_change_bg{
+    outline: none;
+    border: none;
+    background-color: yellow;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+.btn_change1 {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+}
+.btn_change2 {
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+}
+
+
+
